@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <label class="labelAling form-label" for="servico"><b>Serviço:</b></label>
+                    <select class="form-select" id="servico">
+                        <option value="">Selecione...</option>
+                        <option value="manutenção">Manutenção</option>
+                        <option value="limpeza">Limpeza</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label  class="labelAling form-label" for="data-postagem"><b>Data de Postagem:</b></label>
+                    <input class="form-control" type="date" id="data-postagem">
+                </div>
+                <div class="col-md-2">
+                    <label class="labelAling form-label" for="quantidade"><b>Quantidade:</b></label>
+                    <input class="form-control" type="number" id="quantidade">
+                </div>
+                <div class="col-md-2">
+                    <label class="labelAling form-label" for="job"><b>Job:</b></label>
+                    <input class="form-control" type="text" id="job">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label" for="numero-recibo"><b>Nº Recibo,OCR ou Remessa:</b></label>
+                    <input class="form-control" type="number" id="numero-recibo">
+                </div>
+                <div class="col-md-3">
+                    <label class="labelAling form-label" for="data-lancamento"><b>Data de Lançamento:</b></label>
+                    <input class="form-control" type="date" id="data-lancamento">
+                </div>
+            </div>
+            <div class="bnt">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Salvar</button>
+                <a href="index.html"><button class="btn btn-danger" type="button">Cancelar</button></a>
+            </div>
+        </form>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirma cadastro</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <p>Salvar informações?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button></a>
+                  <a href="index.html"><button type="button" class="btn btn-primary">Salvar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
